@@ -1,0 +1,15 @@
+$font-regular: 'Poppins', sans-serif;
+
+// colors
+$primary-white: #ffffff;
+$primary-black: #1E1E1E;
+$primary-red-text: #DC3B5A;
+
+// breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1280px;
+
+//timing function
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-default: all 0.5s $timing-function;

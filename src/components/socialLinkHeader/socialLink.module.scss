@@ -1,0 +1,32 @@
+@import '../../scss/base/variables';
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+
+  path {
+    transition: $transition-default;
+  }
+
+  &:hover {
+    path {
+      fill: $primary-white;
+    }
+  }
+}
+.listLink {
+  border-radius: 8px;
+  background: rgba(30, 30, 30, 0.1);
+  color: rgb(30, 30, 30);
+}

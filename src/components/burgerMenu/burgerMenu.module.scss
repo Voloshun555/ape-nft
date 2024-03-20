@@ -1,0 +1,88 @@
+@import '../../scss/base/variables';
+@import '../../scss/base/fonts';
+
+.container {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 62px 16px 24px 16px;
+  background-color: $primary-black;
+}
+.logo {
+  margin-top: 5px;
+  path {
+    fill: $primary-white;
+  }
+}
+.nav {
+  position: absolute;
+  right: 16px;
+  top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.listLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+
+  color: $primary-white;
+  font-size: 12px;
+
+  path {
+    transition: $transition-default;
+    fill: $primary-white;
+  }
+
+  &:hover {
+    path {
+      fill: $primary-red-text;
+    }
+  }
+  .link {
+    display: flex;
+  }
+}
+
+.wraplink {
+  position: relative;
+}
+
+.navLinkSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 35px;
+}
+.listNavSection {
+  font-family: MessinaSansMono-Regular;
+  font-weight: 600;
+  size: 24px;
+  line-height: 29px;
+
+  color: $primary-white;
+}
+
+.myCopyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 77px;
+  font-family: MessinaSansMono-Regular;
+  font-weight: 400;
+  size: 12px;
+  line-height: 1.1;
+
+  color: $primary-white;
+}
