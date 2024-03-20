@@ -1,8 +1,5 @@
 html {
   box-sizing: border-box;
-  width: 100%;
-  min-width: 320px;
-  height: 100%;
 }
 
 *,
@@ -44,17 +41,11 @@ body {
 
   display: flex;
   flex-direction: column;
-
-  font-family: $font-regular;
-  color: $primary-white;
   background-color: $primary-black;
-  line-height: 1.5;
-
 }
 
 button {
   font-family: inherit;
-  
 
   border: none;
 

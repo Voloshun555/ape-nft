@@ -6,22 +6,24 @@ import s from './socialLink.module.scss';
 
 export const SocialLink = () => {
   return (
-    <ul className={s.nav}>
-      <li className={s.listLink}>
-        <a href="#" className={s.link}>
-          <Discord />
-        </a>
-      </li>
-      <li className={s.listLink}>
-        <a href="#" className={s.link}>
-          <Logomark />
-        </a>
-      </li>
-      <li className={s.listLink}>
-        <a href="#" className={s.link}>
-          <XLogo />
-        </a>
-      </li>
-    </ul>
+    <nav>
+      <ul className={s.nav}>
+        <li className={s.listLink}>
+          <a href="#" className={s.link}>
+            <Discord />
+          </a>
+        </li>
+        <li className={s.listLink}>
+          <a href="#" className={s.link}>
+            <Logomark />
+          </a>
+        </li>
+        <li className={s.listLink}>
+          <a href="#" className={s.link}>
+            <XLogo />
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 };

@@ -2,12 +2,20 @@
 @import '../../scss/base/variables';
 
 .container {
-  background-color: rgb(218, 51, 59);
-  padding: 8px 8px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
 
   display: flex;
   justify-content: space-between;
-}
+  z-index: 100;
 
-@include mobile-only {
+  min-width: 360px;
+  
+
+  padding: 62px 16px 0px;
+  margin: 0 auto;
+  background-color: transparent;
+  @include mobile-only {
+  }
 }

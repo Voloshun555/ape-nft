@@ -6,7 +6,6 @@ import { ReactComponent as XLogo } from '../../assets/icons/X.svg';
 
 import s from './burgerMenu.module.scss';
 
-
 const BurgerMenuModal = document.getElementById('MenuBurger');
 
 const BurgerMenu = ({ onClose }) => {
@@ -38,13 +37,15 @@ const BurgerMenu = ({ onClose }) => {
         </li>
       </ul>
       <div className={s.wrapLinkSection}>
-        <ul className={s.navLinkSection}>
-          <li className={s.listNavSection}>ABOUT</li>
-          <li className={s.listNavSection}>M-MAP</li>
-          <li className={s.listNavSection}>FAQ</li>
-          <li className={s.listNavSection}>ARTS</li>
-          <li className={s.listNavSection}>MINT</li>
-        </ul>
+        <nav>
+          <ul className={s.navLinkSection}>
+            <li className={s.listNavSection}>ABOUT</li>
+            <li className={s.listNavSection}>M-MAP</li>
+            <li className={s.listNavSection}>FAQ</li>
+            <li className={s.listNavSection}>ARTS</li>
+            <li className={s.listNavSection}>MINT</li>
+          </ul>
+        </nav>
 
         <p className={s.myCopyright}>
           © YACHT APE 2024 ALL RIGHTS
