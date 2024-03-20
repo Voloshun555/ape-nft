@@ -51,8 +51,8 @@ export const Hero = () => {
               MEET APES
             </a>
             <p>
-              Yacht Ape is a collection of <br /> unique digital apes that you
-              <br /> can own in NFT format
+              Yacht Ape is a collection of unique digital apes that you can own
+              in NFT format
             </p>
           </div>
         </div>
