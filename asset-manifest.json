@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ape-nft/static/css/main.fb561a74.css",
-    "main.js": "/ape-nft/static/js/main.f3162056.js",
+    "main.css": "/ape-nft/static/css/main.97501b5c.css",
+    "main.js": "/ape-nft/static/js/main.01a443fd.js",
     "static/js/453.cc20a04b.chunk.js": "/ape-nft/static/js/453.cc20a04b.chunk.js",
     "static/media/hero-desktop@2x.png": "/ape-nft/static/media/hero-desktop@2x.8b66b82224cef936159c.png",
-    "static/media/BiroScriptPlus.ttf": "/ape-nft/static/media/BiroScriptPlus.8f40d0e26da891712200.ttf",
+    "static/media/BiroScriptUSPlus-Bold.ttf": "/ape-nft/static/media/BiroScriptUSPlus-Bold.c25a918a0bfeeaf1fb9f.ttf",
     "static/media/hero-tablet@2x.png": "/ape-nft/static/media/hero-tablet@2x.a86cd510bf07678b0481.png",
     "static/media/hero-desktop@1x.png": "/ape-nft/static/media/hero-desktop@1x.0a5edfc4470a08757ab2.png",
     "static/media/hero-mobile@2x.png": "/ape-nft/static/media/hero-mobile@2x.60fd7bb512bce3154d7b.png",
@@ -18,12 +18,12 @@
     "static/media/discord.svg": "/ape-nft/static/media/discord.1ad44e382eecc99c122b1d58c6996d82.svg",
     "index.html": "/ape-nft/index.html",
     "static/media/X.svg": "/ape-nft/static/media/X.d930455e745813c38ae89fdd64ce059e.svg",
-    "main.fb561a74.css.map": "/ape-nft/static/css/main.fb561a74.css.map",
-    "main.f3162056.js.map": "/ape-nft/static/js/main.f3162056.js.map",
+    "main.97501b5c.css.map": "/ape-nft/static/css/main.97501b5c.css.map",
+    "main.01a443fd.js.map": "/ape-nft/static/js/main.01a443fd.js.map",
     "453.cc20a04b.chunk.js.map": "/ape-nft/static/js/453.cc20a04b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb561a74.css",
-    "static/js/main.f3162056.js"
+    "static/css/main.97501b5c.css",
+    "static/js/main.01a443fd.js"
   ]
 }
