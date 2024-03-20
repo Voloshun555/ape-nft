@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/ape-nft/static/css/main.f855e6bc.css",
-    "main.js": "/ape-nft/static/js/main.c41f9665.js",
+    "main.css": "/ape-nft/static/css/main.f5175094.css",
+    "main.js": "/ape-nft/static/js/main.e2cb502c.js",
     "static/js/453.cc20a04b.chunk.js": "/ape-nft/static/js/453.cc20a04b.chunk.js",
-    "static/media/logo.svg": "/ape-nft/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/BiroScriptPlus.ttf": "/ape-nft/static/media/BiroScriptPlus.8f40d0e26da891712200.ttf",
+    "static/media/RightGrotesk-CompactBlack.ttf": "/ape-nft/static/media/RightGrotesk-CompactBlack.367abab8bd03b3cf68a2.ttf",
+    "static/media/MessinaSansMono-Regular.ttf": "/ape-nft/static/media/MessinaSansMono-Regular.b289391c577f8fd447dd.ttf",
+    "static/media/MessinaSansMono-SemiBold.ttf": "/ape-nft/static/media/MessinaSansMono-SemiBold.79c44c973c9e739c9ad4.ttf",
+    "static/media/logo.svg": "/ape-nft/static/media/logo.6b77f30218aca1ec97a47c136a63375a.svg",
+    "static/media/Logomark-Blue 1.svg": "/ape-nft/static/media/Logomark-Blue 1.f6ab9f2c0d4e7ad9164f5d3af1d80bdc.svg",
+    "static/media/discord.svg": "/ape-nft/static/media/discord.1ad44e382eecc99c122b1d58c6996d82.svg",
     "index.html": "/ape-nft/index.html",
-    "main.f855e6bc.css.map": "/ape-nft/static/css/main.f855e6bc.css.map",
-    "main.c41f9665.js.map": "/ape-nft/static/js/main.c41f9665.js.map",
+    "static/media/X.svg": "/ape-nft/static/media/X.d930455e745813c38ae89fdd64ce059e.svg",
+    "main.f5175094.css.map": "/ape-nft/static/css/main.f5175094.css.map",
+    "main.e2cb502c.js.map": "/ape-nft/static/js/main.e2cb502c.js.map",
     "453.cc20a04b.chunk.js.map": "/ape-nft/static/js/453.cc20a04b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.c41f9665.js"
+    "static/css/main.f5175094.css",
+    "static/js/main.e2cb502c.js"
   ]
 }
