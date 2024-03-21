@@ -10,17 +10,17 @@ export const SocialLink = () => {
       <ul className={s.nav}>
         <li className={s.listLink}>
           <a href="#" className={s.link}>
-            <Discord />
+            <Discord className={s.iconSocial} />
           </a>
         </li>
         <li className={s.listLink}>
           <a href="#" className={s.link}>
-            <Logomark />
+            <Logomark className={s.iconSocial} />
           </a>
         </li>
         <li className={s.listLink}>
           <a href="#" className={s.link}>
-            <XLogo />
+            <XLogo className={s.iconSocial} />
           </a>
         </li>
       </ul>

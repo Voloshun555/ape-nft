@@ -1,4 +1,5 @@
 @import '../../scss/base/variables';
+@import '../../scss//base/mixins';
 
 .nav {
   display: flex;
@@ -19,6 +20,11 @@
     transition: $transition-default;
   }
 
+  @include desktop-only {
+    width: 80px;
+    height: 80px;
+  }
+
   &:hover {
     path {
       fill: $primary-white;
@@ -29,4 +35,11 @@
   border-radius: 8px;
   background: rgba(30, 30, 30, 0.1);
   color: rgb(30, 30, 30);
+}
+
+.iconSocial {
+  @include tablet-and-desktop {
+    width: 24px;
+    height: 24px;
+  }
 }

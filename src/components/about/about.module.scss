@@ -1,0 +1,157 @@
+@import '../../scss/base/variables';
+@import '../../scss/base/mixins';
+.section {
+  padding: 60px 64px 0;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @include mobile-only {
+    align-items: center;
+    justify-content: center;
+  }
+  @include tablet-only {
+    width: 640px;
+    padding-bottom: 46px;
+  }
+  @include desktop-only {
+   width: 1120px
+  }
+}
+.title {
+  font-family: RightGrotesk;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1;
+
+  text-transform: uppercase;
+  color: $primary-white;
+  span {
+    color: $primary-red-text;
+  }
+  @include mobile-only {
+    width: 220px;
+  }
+  @include tablet-only {
+    font-size: 60px;
+    line-height: 1em;
+    width: 635px;
+    span br {
+      display: none;
+    }
+  }
+  @include desktop-only {
+    font-size: 120px;
+    line-height: 1;
+    span br {
+      display: none;
+    }
+    
+  }
+}
+.wrapTitle {
+  display: flex;
+  @include mobile-only {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+    gap: 16px;
+  }
+  @include tablet-only {
+    flex-direction: row;
+    margin-bottom: 68px;
+    width: auto;
+    gap: 50px;
+  }
+}
+.dynamicJourney {
+  font-family: MessinaSansMono-Regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: right;
+  text-transform: uppercase;
+  color: $primary-white;
+  @include mobile-only {
+    width: 220px;
+    text-indent: 120px;
+    br {
+      display: none;
+    }
+  }
+  @include tablet-only {
+    margin-top: 10px;
+    width: 760px;
+  }
+  @include desktop-only {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+.storyTelling {
+  font-family: MessinaSansMono-Regular;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primary-white;
+  @include mobile-only {
+    width: 210px;
+    margin-bottom: 40px;
+  }
+  @include tablet-only {
+    font-size: 16px;
+    line-height: 1.1;
+    width: 250px;
+  }
+  @include desktop-only {
+    font-size: 24px;
+    line-height: 1.2;
+    width: 390px;
+  }
+}
+
+.wrapStory {
+  display: flex;
+  flex-direction: column;
+  @include mobile-only {
+    align-items: center;
+    justify-content: center;
+  }
+  @include tablet-and-desktop {
+    transform: translate(-195px, 10px);
+    align-items: center;
+  }
+  @include desktop-only{
+    transform: translate(-340px, 60px);
+  }
+}
+
+.croos {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 16px;
+}
+.imgHero {
+  width: 216px;
+  height: 292px;
+  @include tablet-and-desktop {
+    width: 313px;
+    height: 422px;
+    position: absolute;
+    top: 120px;
+    left: 285px;
+  }
+  @include desktop-only {
+   width: 492px;
+    height: 662px;
+    top: 225px;
+    left: 535px;
+  }
+}

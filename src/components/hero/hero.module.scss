@@ -40,11 +40,13 @@
   @include desktop-only {
     font-size: 24px;
     line-height: 1.66;
-   transform: translate(-60px, -95px);
+    transform: translate(-60px, -95px);
   }
 }
 .linkMeetApes {
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 70px 12px;
   border-radius: 8px;
   border: none;
@@ -58,12 +60,14 @@
   text-transform: uppercase;
   transition: $transition-default;
   @include tablet-only {
-    transform: translate(-15px, 0px);
+    // transform: translate(-15px, 0px);
   }
-  @include desktop-only{
+  @include desktop-only {
     font-size: 28px;
-  line-height: 1.21;
-  margin-bottom: 60px;
+    line-height: 1.21;
+    margin-bottom: 60px;
+
+    width: 337px;
   }
   &:hover {
     color: $primary-white;
@@ -78,11 +82,11 @@
   @include tablet-and-desktop {
     flex-direction: column-reverse;
     margin-bottom: 35px;
+    transform: translate(-16px, 0px);
   }
-  @include desktop-only{
+  @include desktop-only {
     gap: 28px;
-    transform: translate(-35px, -10px);
-    z-index: 100;
+    transform: translate(-35px, 0px);
   }
 
   p {
@@ -93,18 +97,21 @@
     font-size: 12px;
     line-height: 1.16;
     text-align: center;
+
     width: 215px;
-    @include tablet-only {
-      width: 215px;
+    @include tablet-and-desktop {
+      width: 200px;
       line-height: 1.16;
-        text-align: justify;
+      text-align: justify;
+      text-indent: 75px;
+    }
+    @include desktop-only {
+      width: 330px;
+      font-size: 16px;
+      line-height: 1.1;
+      text-indent: 78px;
 
     }
-  }
-  @include desktop-only{
-    font-size: 16px;
-    line-height: 1.1;
-     text-align: end;
   }
 }
 
@@ -156,7 +163,7 @@
     width: 205px;
   }
   @include desktop-only {
-   top: 360px;
+    top: 360px;
     left: 65px;
     font-size: 24px;
     line-height: 1.66;

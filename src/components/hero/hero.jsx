@@ -1,23 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { heroImages } from '../../utils/heroSrcSet';
 import s from './hero.module.scss';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 export const Hero = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const { width } = useWindowSize();
 
   let srcSetHero = {};
-  if (windowWidth < 768) {
+  if (width < 768) {
     srcSetHero = {
       src: heroImages.heroMobil1X,
       srcSet: `${heroImages.heroMobil1X} 1x, ${heroImages.heroMobil2X} 2x`,
     };
-  } else if (windowWidth >= 768 && windowWidth < 1280) {
+  } else if (width >= 768 && width < 1280) {
     srcSetHero = {
       src: heroImages.heroTablet1X,
       srcSet: `${heroImages.heroTablet1X} 1x, ${heroImages.heroTablet2X} 2x`,
