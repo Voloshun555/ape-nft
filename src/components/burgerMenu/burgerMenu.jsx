@@ -39,7 +39,10 @@ const BurgerMenu = ({ onClose }) => {
       <div className={s.wrapLinkSection}>
         <nav>
           <ul className={s.navLinkSection}>
-            <li className={s.listNavSection}>ABOUT</li>
+            <li className={s.listNavSection}>
+              {' '}
+              <a href="about">ABOUT</a>
+            </li>
             <li className={s.listNavSection}>M-MAP</li>
             <li className={s.listNavSection}>FAQ</li>
             <li className={s.listNavSection}>ARTS</li>

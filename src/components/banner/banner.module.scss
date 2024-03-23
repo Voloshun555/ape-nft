@@ -1,0 +1,57 @@
+@import '../../scss/base/variables';
+@import '../../scss/base/mixins';
+.container {
+  background-color: $primary-red-text;
+  overflow: hidden;
+  height: 52px;
+  padding: 6px 0px 8px;
+  @include desktop-only {
+    height: 86px;
+  }
+}
+.banner {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 50px;
+    animation-name: scroll;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.bannerList {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  font-family: RightGrotesk;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $primary-white;
+  gap: 50px;
+  @include desktop-only {
+    font-size: 64px;
+  }
+}
+
+.cross {
+  width: 36px;
+  height: 36px;
+  @include desktop-only {
+    margin-top: 10px;
+  }
+}
+@keyframes banner {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - .5rem))
+    }
+}
