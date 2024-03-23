@@ -17,7 +17,7 @@ export const slides = [
   },
   {
     type: 'link',
-    text: <AppLeftArrow />,
+    svg: <AppLeftArrow />,
     heading: ['Learn', 'more', 'in mind map'],
   },
 ];

@@ -1,43 +1,7 @@
 @import '../../scss/base/variables';
 @import '../../scss//base/mixins';
 
-.slideList {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  background-color: $primary-black;
-  padding: 24px 12px;
-  width: 216px;
-  height: 242px;
-  border-radius: 12px;
-  margin-bottom: 24px;
 
-  @include tablet-only {
-    width: 284px;
-  }
-  @include desktop-only {
-    width: 560px;
-    height: 480px;
-  }
-}
-
-// .slideList:last-child {
-//   background-color: $primary-red-text;
-//   padding: 0;
-// }
-.link {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-
-  padding: 24px 12px;
-  background-color: $primary-red-text;
-}
 .slide {
   @include tablet-and-desktop {
     display: grid;
@@ -46,42 +10,3 @@
   }
 }
 
-.text {
-  font-family: MessinaSansMono-Regular;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
-  color: $primary-white;
-  text-transform: uppercase;
-  @include tablet-and-desktop {
-    margin-left: 50%;
-  }
-
-  @include desktop-only {
-    font-size: 24px;
-  }
-}
-.title {
-  font-family: RightGrotesk;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 1;
-  text-transform: uppercase;
-  color: $primary-white;
-  @include desktop-only {
-    font-size: 64px;
-  }
-}
-.wrapButton {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.buttonSlide {
-  font-family: BiroScriptPlus;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1;
-  background-color: transparent;
-  color: $primary-white;
-}

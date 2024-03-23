@@ -1,14 +1,14 @@
 @import '../../scss/base/variables';
 @import '../../scss//base/mixins';
-.section{
-    padding: 60px 78px;
+.section {
+  padding: 60px 78px;
 }
-.container{
-     display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.title{
+.title {
   font-family: RightGrotesk;
   font-weight: 900;
   font-size: 44px;
@@ -16,4 +16,47 @@
   color: $primary-white;
   text-transform: uppercase;
   margin-bottom: 24px;
+  @include tablet-and-desktop {
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+  @include desktop-only {
+    font-size: 160px;
+    margin-bottom: 80px;
+  }
+}
+.iconCross {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 16px;
+  @include tablet-only {
+    margin-bottom: 24px;
+  }
+  @include desktop-only {
+    margin-bottom: 40px;
+  }
+}
+
+.text {
+  font-family: MessinaSansMono-Regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: $primary-white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+  width: 200px;
+
+  @include tablet-only {
+    margin-bottom: 24px;
+    width: 400px;
+  }
+  @include desktop-only {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    width: 600px;
+  }
 }

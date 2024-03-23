@@ -1,0 +1,15 @@
+@import '../../scss/base/variables';
+@import '../../scss//base/mixins';
+.text{
+ font-family: MessinaSansMono-Regular;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: $primary-white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer{
+   padding-bottom: 80px;
+}
