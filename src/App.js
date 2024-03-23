@@ -4,6 +4,9 @@ import { Header } from './components/header/header';
 import { Hero } from './components/hero/hero';
 import { About } from './components/about/about';
 import { MindMap } from './components/mindMap/mindMap';
+import { Collection } from './components/collection/collection';
+import { ContactUs } from './components/contactUs/contactUs';
+
 
 function App() {
   return (
@@ -11,7 +14,9 @@ function App() {
       <Header/>
       <Hero />
       <About />
-      <MindMap/>
+      <MindMap />
+      <Collection />
+      <ContactUs/>
     </>
   );
 }

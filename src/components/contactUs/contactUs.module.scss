@@ -1,0 +1,19 @@
+@import '../../scss/base/variables';
+@import '../../scss//base/mixins';
+.section{
+    padding: 60px 78px;
+}
+.container{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+  font-family: RightGrotesk;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 0.9;
+  color: $primary-white;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}

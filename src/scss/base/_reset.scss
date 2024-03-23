@@ -1,3 +1,5 @@
+@import '../../scss/base/variables';
+
 html {
   box-sizing: border-box;
 }
@@ -41,7 +43,8 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: $primary-black;
+  background-color: rgb(24, 24, 24);
+  color: $primary-white;
 }
 
 button {
