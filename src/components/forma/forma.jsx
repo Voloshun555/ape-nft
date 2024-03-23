@@ -1,62 +1,71 @@
-import { Formik } from 'formik';
-import React from 'react'
+import { ErrorMessage, Formik } from 'formik';
+import { validationSchema } from '../../utils/validateSchema';
+import { ReactComponent as Discord } from '../../assets/icons/discord.svg';
+import { ReactComponent as MetaMask } from '../../assets/icons/meta-mask.svg';
+import s from './forma.module.scss';
 
 export const Forma = () => {
+  const handleSubmit = (values, { resetForm }) => {
+    const user = values.username.trim().replace('@', '');
+    const wallet = values.walletAddress.trim();
+
+    resetForm();
+  };
   return (
     <div>
       <Formik
         initialValues={{ username: '', walletAddress: '' }}
-        validate={values => {
-          const errors = {};
-          if (!values.email) {
-            errors.email = 'Required';
-          } else if (
-            !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-          ) {
-            errors.email = 'Invalid email address';
-          }
-          return errors;
-        }}
-        onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 400);
-        }}
+        validate={validationSchema}
+        onSubmit={handleSubmit}
       >
-        {({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleBlur,
-          handleSubmit,
-          isSubmitting,
-          /* and other goodies */
-        }) => (
-          <form onSubmit={handleSubmit}>
-            <input
-              type="email"
-              name="email"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.email}
-            />
-            {errors.email && touched.email && errors.email}
-            <input
-              type="password"
-              name="password"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.password}
-            />
-            {errors.password && touched.password && errors.password}
-            <button type="submit" disabled={isSubmitting}>
-              Submit
+        {({ errors, touched }) => (
+          <form autoComplete="off" className={s.forma}>
+            <div className={s.containerForm}>
+              <div className={s.containerIcon}>
+                <Discord className={s.icon} />
+              </div>
+              <input
+                name="username"
+                placeholder="@username"
+                className={s.input}
+                error={errors.username && touched.username ? 'true' : undefined}
+              />
+              {errors.username && touched.username ? (
+                <ErrorMessage
+                  className={s.errors}
+                  name="walletAddress"
+                  component="div"
+                />
+              ) : null}
+            </div>
+            <div className={s.containerForm}>
+              <div className={s.containerIcon}>
+                <MetaMask className={s.icon} />
+              </div>
+              <input
+                name="walletAddress"
+                placeholder="Wallet address"
+                className={s.input}
+                error={
+                  errors.walletAddress && touched.walletAddress
+                    ? 'true'
+                    : undefined
+                }
+              />
+              {errors.walletAddress && touched.walletAddress ? (
+                <ErrorMessage
+                  className={s.errors}
+                  name="walletAddress"
+                  component="div"
+                />
+              ) : null}
+            </div>
+            <button className={s.button} type="submit">
+              MINT
             </button>
           </form>
         )}
       </Formik>
     </div>
   );
-}
+};

@@ -1,4 +1,5 @@
 import { ReactComponent as AddSharp } from '../../assets/icons/add-sharp.svg';
+import { Forma } from '../forma/forma';
 import s from './contactUs.module.scss';
 
 export const ContactUs = () => {
@@ -11,6 +12,7 @@ export const ContactUs = () => {
           Join the YACHT APE community to be one of the first to receive our
           limited edition NFT
         </p>
+        <Forma/>
       </div>
     </section>
   );

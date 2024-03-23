@@ -1,0 +1,105 @@
+@import '../../scss/base/variables';
+@import '../../scss//base/mixins';
+
+.forma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 12px;
+
+  @include tablet-only {
+  }
+  @include desktop-only {
+    gap: 24px;
+  }
+}
+
+.containerForm {
+  display: flex;
+  position: relative;
+}
+
+.errors {
+  position: absolute;
+  bottom: -13px;
+  right: 0px;
+  font-size: 10px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: $primary-red-text;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  width: 168px;
+  height: 48px;
+  padding: 16px 24px;
+
+  border-radius: 0px 8px 8px 0px;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: $primary-black;
+  @include tablet-only {
+    width: 200px;
+  }
+  @include desktop-only {
+    width: 333px;
+    height: 64px;
+  }
+}
+.containerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0px 0px 8px;
+  fill: $blue-color;
+  width: 48px;
+  height: 48px;
+  background-color: $primary-black;
+  @include tablet-only {
+    width: 48px;
+    height: 48px;
+  }
+  @include desktop-only {
+    width: 64px;
+    height: 64px;
+  }
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 10px 70px 12px;
+  border-radius: 8px;
+  width: 100%;
+  border: none;
+  background: $primary-red-text;
+  color: $primary-white;
+  text-align: center;
+  font-family: RightGrotesk;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.18;
+  text-transform: uppercase;
+  @include tablet-only {
+    line-height: 1.1;
+  }
+  @include desktop-only {
+    font-size: 28px;
+    line-height: 1.21;
+
+    height: 70px;
+  }
+}
