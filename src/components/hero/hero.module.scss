@@ -32,6 +32,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  color: $primary-black;
   @include tablet-only {
     font-size: 20px;
     line-height: 1.65;
@@ -51,7 +52,7 @@
   border-radius: 8px;
   border: none;
   background: rgba(30, 30, 30, 0.1);
-  color: $primary-black;
+  color: $primary-black !important;
   font-family: RightGrotesk;
   font-size: 16px;
   font-weight: 900;
@@ -59,9 +60,6 @@
   backdrop-filter: blur(6px);
   text-transform: uppercase;
   transition: $transition-default;
-  @include tablet-only {
-    // transform: translate(-15px, 0px);
-  }
   @include desktop-only {
     font-size: 28px;
     line-height: 1.21;
@@ -70,7 +68,7 @@
     width: 337px;
   }
   &:hover {
-    color: $primary-white;
+    color: $primary-white !important;
   }
 }
 

@@ -20,14 +20,20 @@
   position: relative;
 }
 
-.errors {
+.errorMessage {
   position: absolute;
-  bottom: -13px;
+  bottom: -12px;
   right: 0px;
+  font-family: MessinaSansMono-Regular;
+  font-weight: 400;
   font-size: 10px;
   line-height: 1.2em;
   text-transform: uppercase;
   color: $primary-red-text;
+  padding: 1px;
+  @include desktop-only {
+    bottom: -15px;
+  }
 }
 
 .input {
@@ -40,7 +46,7 @@
   padding: 16px 24px;
 
   border-radius: 0px 8px 8px 0px;
-
+  color: $primary-white;
   font-size: 12px;
   text-transform: uppercase;
   background-color: $primary-black;
@@ -51,6 +57,16 @@
     width: 333px;
     height: 64px;
   }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-white;
+    border: 1px solid $primary-white;
+  }
+}
+.error {
+  border: 1px solid $primary-red-text;
+  color: $primary-red-text;
 }
 .containerIcon {
   display: flex;
@@ -93,6 +109,7 @@
   font-weight: 900;
   line-height: 1.18;
   text-transform: uppercase;
+  transition: $transition-default;
   @include tablet-only {
     line-height: 1.1;
   }
@@ -101,5 +118,9 @@
     line-height: 1.21;
 
     height: 70px;
+  }
+
+  &:hover{
+color: $primary-black;
   }
 }

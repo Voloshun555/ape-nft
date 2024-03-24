@@ -7,6 +7,7 @@ import { MindMap } from './components/mindMap/mindMap';
 import { Collection } from './components/collection/collection';
 import { ContactUs } from './components/contactUs/contactUs';
 import { Footer } from './components/footer/footer';
+import { Faq } from './components/faq/faq';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <About />
       <MindMap />
+      <Faq/>
       <Collection />
       <ContactUs />
       <Footer/>

@@ -34,16 +34,14 @@ export const Collection = () => {
   };
 
   return (
-    <section className={s.section}>
+    <section className={s.section} id="arts">
       <div className={s.container}>
         <h1 className={s.title}>COLLECTION</h1>
         <ul className={s.collection}>
           {[...imageCollection, ...imageCollection]
             .slice(currentSlide, currentSlide + slidesToShow)
             .map((item, index) => (
-              <li
-                key={index}
-                className={s.listCollection}>
+              <li key={index} className={s.listCollection}>
                 <img
                   className={s.imgCollection}
                   src={item.src}

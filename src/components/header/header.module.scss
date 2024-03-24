@@ -20,14 +20,17 @@
   }
 }
 
-
-  .logoIcon {
-    width: 48px;
-    height: 32px;
-
-    @include desktop-only {
-      width: 72px;
-      height: 50px;
-    }
+.logoIcon {
+  width: 48px;
+  height: 32px;
+  fill: $primary-black;
+  transition: $transition-default;
+  @include desktop-only {
+    width: 72px;
+    height: 50px;
   }
+}
 
+svg:hover {
+  fill: $primary-white;
+}

@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+   scroll-behavior: smooth;
 }
 
 *,
@@ -33,11 +34,12 @@ a,
 a:visited {
   text-decoration: none;
   color: inherit;
-
   cursor: pointer;
 }
 
 body {
+  font-family: MessinaSansMono-Regular, RightGrotesk, BiroScriptPlus, Roboto,
+    sans-serif;
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
