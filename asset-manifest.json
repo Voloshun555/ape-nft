@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ape-nft/static/css/main.8d259e0b.css",
-    "main.js": "/ape-nft/static/js/main.5c389ae1.js",
+    "main.css": "/ape-nft/static/css/main.e7c69efe.css",
+    "main.js": "/ape-nft/static/js/main.a3513ea0.js",
     "static/js/453.9d210629.chunk.js": "/ape-nft/static/js/453.9d210629.chunk.js",
     "static/media/image11@2x.png": "/ape-nft/static/media/image11@2x.ab673b6a9cc227083635.png",
     "static/media/image10@2x.png": "/ape-nft/static/media/image10@2x.642f34c4e14676a29b7f.png",
@@ -43,7 +43,7 @@
     "static/media/RightGrotesk-CompactBlack.ttf": "/ape-nft/static/media/RightGrotesk-CompactBlack.367abab8bd03b3cf68a2.ttf",
     "static/media/MessinaSansMono-Regular.ttf": "/ape-nft/static/media/MessinaSansMono-Regular.b289391c577f8fd447dd.ttf",
     "static/media/MessinaSansMono-SemiBold.ttf": "/ape-nft/static/media/MessinaSansMono-SemiBold.79c44c973c9e739c9ad4.ttf",
-    "static/media/logo.svg": "/ape-nft/static/media/logo.6b77f30218aca1ec97a47c136a63375a.svg",
+    "static/media/logo.svg": "/ape-nft/static/media/logo.21e9ee9db8380d89952269b28fccdb01.svg",
     "static/media/meta-mask.svg": "/ape-nft/static/media/meta-mask.e5a9ac306d924bcfa9639a4f1a47adcb.svg",
     "static/media/Logomark-Blue 1.svg": "/ape-nft/static/media/Logomark-Blue 1.f6ab9f2c0d4e7ad9164f5d3af1d80bdc.svg",
     "static/media/discord.svg": "/ape-nft/static/media/discord.1ad44e382eecc99c122b1d58c6996d82.svg",
@@ -51,12 +51,12 @@
     "static/media/X.svg": "/ape-nft/static/media/X.d930455e745813c38ae89fdd64ce059e.svg",
     "static/media/add-sharp.svg": "/ape-nft/static/media/add-sharp.35caf4c6fbb1ac2191ba7616abec8eae.svg",
     "static/media/up-left-arrow.svg": "/ape-nft/static/media/up-left-arrow.29e76a0e75acf2a6ae2aa76ce99341ad.svg",
-    "main.8d259e0b.css.map": "/ape-nft/static/css/main.8d259e0b.css.map",
-    "main.5c389ae1.js.map": "/ape-nft/static/js/main.5c389ae1.js.map",
+    "main.e7c69efe.css.map": "/ape-nft/static/css/main.e7c69efe.css.map",
+    "main.a3513ea0.js.map": "/ape-nft/static/js/main.a3513ea0.js.map",
     "453.9d210629.chunk.js.map": "/ape-nft/static/js/453.9d210629.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d259e0b.css",
-    "static/js/main.5c389ae1.js"
+    "static/css/main.e7c69efe.css",
+    "static/js/main.a3513ea0.js"
   ]
 }
