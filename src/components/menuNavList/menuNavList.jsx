@@ -2,7 +2,6 @@ import s  from './menuNavList.module.scss';
 
 export const MenuNavList = () => {
   return (
-    <div className={s.container}>
       <ul className={s.navLinkSection}>
         <li className={s.listNavSection}>
           <a href="#about">ABOUT</a>
@@ -20,6 +19,5 @@ export const MenuNavList = () => {
           <a href="#mint">MINT</a>
         </li>
       </ul>
-    </div>
   );
 };
