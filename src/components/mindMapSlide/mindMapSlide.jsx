@@ -1,30 +1,50 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { slides } from '../data/collectionMindMap';
 import { Button } from '../button/button';
 import { SlideCardMindMap } from '../slideCardMindMap/slideCardMindMap';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import s from './mindMapSlide.module.scss';
 
 export const MindMapSlide = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const swiperRef = useRef(null);
   const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
   const nextSlide = () => {
-    setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
   };
 
   const prevSlide = () => {
-    setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
   };
+
   if (isMobile) {
     return (
       <>
-        <ul className={s.slide}>
-          <SlideCardMindMap
-            slide={slides[currentSlide]}
-            isLink={slides[currentSlide].type === 'link'}
-          />
-        </ul>
+        <Swiper
+          className={s.swiper}
+          ref={swiperRef}
+          slidesPerView={1}
+          spaceBetween={0}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }}
+          loop={false}
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index} >
+              <SlideCardMindMap slide={slide} isLink={slide.type === 'link'} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
         <Button nextSlide={nextSlide} prevSlide={prevSlide} />
       </>
     );
@@ -42,3 +62,5 @@ export const MindMapSlide = () => {
     );
   }
 };
+
+ 

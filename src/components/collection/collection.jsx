@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Button } from '../button/button';
 import { imageCollection } from '../data/collectionImg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import s from './collection.module.scss';
 
-export const Collection = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
 
+export const Collection = () => {
+  const swiperRef = useRef(null);
   const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
   const isTablet = useMediaQuery({
     query: '(min-width: 768px) and (max-width: 1279px)',
@@ -22,35 +26,44 @@ export const Collection = () => {
   }
 
   const nextSlide = () => {
-    setCurrentSlide(
-      currentSlide === imageCollection.length - 1 ? 0 : currentSlide + 1,
-    );
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
   };
 
   const prevSlide = () => {
-    setCurrentSlide(
-      currentSlide === 0 ? imageCollection.length - 1 : currentSlide - 1,
-    );
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
   };
 
   return (
     <section className={s.section} id="arts">
       <div className={s.container}>
         <h1 className={s.title}>COLLECTION</h1>
-        <ul className={s.collection}>
-          {[...imageCollection, ...imageCollection]
-            .slice(currentSlide, currentSlide + slidesToShow)
-            .map((item, index) => (
-              <li key={index} className={s.listCollection}>
-                <img
-                  className={s.imgCollection}
-                  src={item.src}
-                  alt="Collection"
-                  srcSet={item.srcSet}
-                />
-              </li>
-            ))}
-        </ul>
+        <Swiper
+          className={s.swiper}
+          ref={swiperRef}
+          slidesPerView={slidesToShow}
+          spaceBetween={24}
+          loop={false}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }}
+          
+        >
+          {imageCollection.map((item, index) => (
+            <SwiperSlide key={index} className={s.listCollection}>
+              <img
+                className={s.imgCollection}
+                src={item.src}
+                alt="Collection"
+                srcSet={item.srcSet}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <Button nextSlide={nextSlide} prevSlide={prevSlide} />
     </section>

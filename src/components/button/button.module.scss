@@ -13,4 +13,9 @@
   line-height: 1;
   background-color: transparent;
   color: $primary-white;
+  transition: $transition-default;
+
+  &:hover{
+    color: $primary-red-text;
+  }
 }
