@@ -8,8 +8,19 @@
   color: $primary-white;
   text-transform: uppercase;
   text-align: center;
+  
+  @include desktop-only {
+   font-size: 16px;
+  line-height: 1;
+  }
 }
 
 .footer{
-   padding-bottom: 80px;
+   padding: 24px 0px 30px;
+   @include tablet-and-desktop {
+      br{
+         display: none;
+      }
+       padding: 40px 0px 30px;
+   }
 }

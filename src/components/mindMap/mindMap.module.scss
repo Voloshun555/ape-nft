@@ -4,10 +4,9 @@
 .section {
   padding: 60px 52px 0;
   margin: 0 auto;
- 
+
   @include mobile-only {
     width: 360px;
-    
   }
   @include tablet-only {
     max-width: 768px;
@@ -15,6 +14,9 @@
 }
 
 .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: RightGrotesk;
   font-weight: 900;
   font-size: 44px;

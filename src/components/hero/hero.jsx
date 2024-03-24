@@ -42,7 +42,7 @@ export const Hero = () => {
             alt="hero"
           />
           <div className={s.wrapDescription}>
-            <a href="#" className={s.linkMeetApes}>
+            <a href="#mint" className={s.linkMeetApes}>
               MEET APES
             </a>
             <p>

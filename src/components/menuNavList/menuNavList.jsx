@@ -5,19 +5,19 @@ export const MenuNavList = () => {
     <div className={s.container}>
       <ul className={s.navLinkSection}>
         <li className={s.listNavSection}>
-          <a href="#">ABOUT</a>
+          <a href="#about">ABOUT</a>
         </li>
         <li className={s.listNavSection}>
-          <a href="#">M-MAP</a>
+          <a href="#m-map">M-MAP</a>
         </li>
         <li className={s.listNavSection}>
-          <a href="#">FAQ</a>
+          <a href="#faq">FAQ</a>
         </li>
         <li className={s.listNavSection}>
-          <a href="#">ARTS</a>
+          <a href="#arts">ARTS</a>
         </li>
         <li className={s.listNavSection}>
-          <a href="#">MINT</a>
+          <a href="#mint">MINT</a>
         </li>
       </ul>
     </div>
