@@ -1,5 +1,6 @@
 @import '../../scss/base/variables';
 @import '../../scss/base/mixins';
+
 .container {
   background-color: $primary-red-text;
   overflow: hidden;
@@ -14,10 +15,10 @@
   align-items: center;
   white-space: nowrap;
   gap: 50px;
-    animation-name: scroll;
-    animation-duration: 12s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  animation-name: scroll;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 .bannerList {
   display: flex;
@@ -51,7 +52,7 @@
   }
 }
 @keyframes scroll {
-    to {
-        transform: translate(calc(-50% - .5rem))
-    }
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
 }

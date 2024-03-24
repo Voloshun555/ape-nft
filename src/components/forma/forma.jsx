@@ -1,9 +1,11 @@
 import { ErrorMessage, Field, Form, Formik } from 'formik';
+
 import { ReactComponent as Discord } from '../../assets/icons/discord.svg';
 import { ReactComponent as MetaMask } from '../../assets/icons/meta-mask.svg';
+import { validationSchema } from '../../utils/schema';
+
 import { Report } from 'notiflix/build/notiflix-report-aio';
 import { useState } from 'react';
-import { validationSchema } from '../../utils/schema';
 import s from './forma.module.scss';
 
 export const Forma = () => {

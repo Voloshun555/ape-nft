@@ -1,9 +1,11 @@
 import React, { useState, useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { slides } from '../data/collectionMindMap';
 import { Button } from '../button/button';
 import { SlideCardMindMap } from '../slideCardMindMap/slideCardMindMap';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -40,7 +42,7 @@ export const MindMapSlide = () => {
           loop={false}
         >
           {slides.map((slide, index) => (
-            <SwiperSlide key={index} >
+            <SwiperSlide key={index}>
               <SlideCardMindMap slide={slide} isLink={slide.type === 'link'} />
             </SwiperSlide>
           ))}
@@ -62,5 +64,3 @@ export const MindMapSlide = () => {
     );
   }
 };
-
- 

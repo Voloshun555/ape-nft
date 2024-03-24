@@ -20,8 +20,8 @@
     padding-bottom: 46px;
   }
   @include desktop-only {
-   width: 1120px;
-   padding-bottom: 18px;
+    width: 1120px;
+    padding-bottom: 18px;
   }
 }
 .title {
@@ -52,7 +52,6 @@
     span br {
       display: none;
     }
-    
   }
 }
 .wrapTitle {
@@ -70,9 +69,8 @@
     gap: 50px;
     margin-bottom: 68px;
   }
-  @include desktop-only{
+  @include desktop-only {
     margin-bottom: 85px;
-
   }
 }
 .dynamicJourney {
@@ -95,7 +93,7 @@
     width: 760px;
   }
   @include desktop-only {
-     margin-top: 25px;
+    margin-top: 25px;
     font-size: 24px;
     line-height: 1.2;
   }
@@ -136,8 +134,7 @@
     margin-right: auto;
     align-items: center;
   }
-  @include desktop-only{
-  
+  @include desktop-only {
   }
 }
 
@@ -157,7 +154,7 @@
     left: 285px;
   }
   @include desktop-only {
-   width: 492px;
+    width: 492px;
     height: 662px;
     top: 225px;
     left: 535px;

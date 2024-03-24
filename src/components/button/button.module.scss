@@ -1,10 +1,11 @@
 @import '../../scss/base/variables';
 @import '../../scss//base/mixins';
+
 .wrapButton {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
 }
 .buttonSlide {
   font-family: BiroScriptPlus;
@@ -15,7 +16,7 @@
   color: $primary-white;
   transition: $transition-default;
 
-  &:hover{
+  &:hover {
     color: $primary-red-text;
   }
 }

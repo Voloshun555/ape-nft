@@ -26,11 +26,11 @@
   width: 100%;
   height: 100%;
   margin-bottom: 24px;
-  @include tablet-and-desktop{
+  @include tablet-and-desktop {
     width: 595px;
   }
 
-  @include desktop-only{
+  @include desktop-only {
     width: 1160px;
   }
 }

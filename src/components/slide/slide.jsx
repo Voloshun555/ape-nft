@@ -1,6 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Button } from '../button/button';
 import { useRef } from 'react';
+
+import { Button } from '../button/button';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -49,4 +51,3 @@ export const Slide = ({ items, slidesToShow }) => {
     </div>
   );
 };
-

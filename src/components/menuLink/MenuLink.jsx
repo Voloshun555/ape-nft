@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
-import s from './MenuLink.module.scss';
-import  BurgerMenu  from '../burgerMenu/burgerMenu';
+
+import BurgerMenu from '../burgerMenu/burgerMenu';
 import { MenuNavList } from '../menuNavList/menuNavList';
+
+import s from './MenuLink.module.scss';
 
 export const MenuLink = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);

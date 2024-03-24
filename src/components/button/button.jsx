@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import s from './button.module.scss'
+import s from './button.module.scss';
 
 export const Button = ({ prevSlide, nextSlide }) => {
   return (

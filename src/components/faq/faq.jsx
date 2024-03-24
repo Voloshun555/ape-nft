@@ -6,7 +6,7 @@ export const Faq = () => {
   const [activeItem, setActiveItem] = useState('1');
 
   return (
-    <section className={s.section} id='faq'>
+    <section className={s.section} id="faq">
       <div className={s.container}>
         <h2 className={s.title}>FAQ</h2>
         <ul className={s.wrapCollections}>

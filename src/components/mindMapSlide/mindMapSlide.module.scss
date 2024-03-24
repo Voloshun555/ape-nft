@@ -1,7 +1,6 @@
 @import '../../scss/base/variables';
 @import '../../scss//base/mixins';
 
-
 .slide {
   @include tablet-and-desktop {
     display: grid;
@@ -9,7 +8,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.swiper{
- margin-left: 10px;
+.swiper {
+  margin-left: 10px;
 }
-

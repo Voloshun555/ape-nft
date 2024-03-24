@@ -1,26 +1,26 @@
 @import '../../scss/base/variables';
 @import '../../scss//base/mixins';
-.text{
- font-family: MessinaSansMono-Regular;
+.text {
+  font-family: MessinaSansMono-Regular;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   color: $primary-white;
   text-transform: uppercase;
   text-align: center;
-  
+
   @include desktop-only {
-   font-size: 16px;
-  line-height: 1;
+    font-size: 16px;
+    line-height: 1;
   }
 }
 
-.footer{
-   padding: 24px 0px 30px;
-   @include tablet-and-desktop {
-      br{
-         display: none;
-      }
-       padding: 40px 0px 30px;
-   }
+.footer {
+  padding: 24px 0px 30px;
+  @include tablet-and-desktop {
+    br {
+      display: none;
+    }
+    padding: 40px 0px 30px;
+  }
 }

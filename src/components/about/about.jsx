@@ -26,7 +26,7 @@ export const About = () => {
   }
 
   return (
-    <section className={s.section} id='about'>
+    <section className={s.section} id="about">
       <div className={s.container}>
         <div className={s.wrapTitle}>
           <h2 className={s.title}>
@@ -54,7 +54,7 @@ export const About = () => {
           alt="hero"
         />
       </div>
-      <Banner/>
+      <Banner />
     </section>
   );
 };
